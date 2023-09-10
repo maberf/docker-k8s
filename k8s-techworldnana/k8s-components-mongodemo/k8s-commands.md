@@ -23,3 +23,10 @@
 ### give a URL to external service in minikube
 
     minikube service mongo-express-service
+
+### Subir o ambiente a partir de ~/docker-k8s
+    
+    kubectl apply -f k8s-techworldnana/k8s-components-mongodemo/mongo-secret.yaml
+    kubectl apply -f k8s-techworldnana/k8s-components-mongodemo/mongo.yaml
+    kubectl apply -f k8s-techworldnana/k8s-components-mongodemo/mongo-configmap.yaml 
+    kubectl apply -f k8s-techworldnana/k8s-components-mongodemo/mongo-express.yaml
